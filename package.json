@@ -1,9 +1,14 @@
 {
-  "devDependencies": {
-    "json-server": "^0.17.4"
+  "name": "post-scheduler-server",
+  "author": {
+    "name": "ringo"
   },
-  "scripts": {
-
-  "start": "npx json-server db.json"
-}
+  "version": "1.0.0",
+"scripts": {
+  "start": "json-server --watch db.json --port 3001",
+  "server": "json-server --watch db.json --port 3001"
+},
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
 }
